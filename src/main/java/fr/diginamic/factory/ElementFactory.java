@@ -8,7 +8,7 @@ public class ElementFactory {
 
         switch (type) {
             case ADDITIVE:
-                return new Addtive(name, value, unite);
+                return new Additive(name, value, unite);
 
             case INGREDIENT:
                 return new Ingredient(name, value, unite);

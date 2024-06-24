@@ -17,7 +17,7 @@ public class ElementFactoryTest {
         Unite expectedUnite = Unite.MICRO_GRAMS;
         Element element = ElementFactory.create(ElementType.ADDITIVE, expectedName, expectedValue, expectedUnite);
 
-        assertTrue(element instanceof Addtive);
+        assertTrue(element instanceof Additive);
         testAttributes(element, expectedName, expectedValue, expectedUnite);
     }
 
