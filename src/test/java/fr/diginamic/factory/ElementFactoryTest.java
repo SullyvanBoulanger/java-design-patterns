@@ -1,6 +1,7 @@
 package fr.diginamic.factory;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -40,6 +41,16 @@ public class ElementFactoryTest {
 
         assertTrue(element instanceof Ingredient);
         testAttributes(element, expectedName, expectedValue, expectedUnite);
+    }
+
+    @Test
+    public void shouldReturnNull(){
+        String expectedName = "Null";
+        double expectedValue = 50;
+        Unite expectedUnite = Unite.MILLI_GRAMS;
+        Element element = ElementFactory.create(null, expectedName, expectedValue, expectedUnite);
+
+        assertNull(element);
     }
 
     private void testAttributes(Element element, String name, double value, Unite unite){
