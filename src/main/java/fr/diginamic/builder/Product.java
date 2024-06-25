@@ -54,6 +54,10 @@ public class Product {
         return this;
     }
 
+    public Product build(){
+        return this;
+    }
+
     public List<Additive> getAdditives() {
         return additives;
     }
